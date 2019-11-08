@@ -1,16 +1,14 @@
 # swr-axios
 > SWR with axios
 
-安装
+#### Install
 ```
 yarn add swr-axios
 ```
 
-使用
+#### Use
 
-举个例子：
 
-首先在 service 里封装请求
 ```
 import swrAxios from 'swr-axios'
 
@@ -18,7 +16,7 @@ export function getArticleRank(params: any) {
   return swrAxios('/article/rank', params);
 }
 ```
-在页面获取数据
+
 ```
 import api from 'service';
 
@@ -29,8 +27,11 @@ export default function XxxPage() {
 }
 ```
 
-说明
+#### notice
 
-swr-axios 只是作为项目 axios 请求库的一个补充，你可以继续在项目里面使用之前的axios，
-当你觉得页面可以使用 swr 的时候你就可以添加 swr-axios，
-考虑到使用场景，目前只支持 get 请求。
+swr-axios is just a complement to the project axios request library, you can continue to use the previous axios in the project,
+You can add swr-axios when you think the page can use swr.
+Considering the usage scenario, only get requests are currently supported.
+
+#### License
+MIT © Go7hic
